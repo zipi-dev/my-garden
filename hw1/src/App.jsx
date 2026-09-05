@@ -20,6 +20,9 @@ function App() {
         petalColor="yellow"
         centerColor="orange"
       />
+      <Flower 
+        name="סיגלית"
+      />
     </div>
   );
 }
