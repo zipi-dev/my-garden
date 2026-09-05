@@ -1,4 +1,5 @@
 import Header from './Header';
+import Flower from './Flower';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <p>ברוכים הבאים לאתר הגינה שלנו</p>
       
       {/* כאן אפשר להוסיף בהמשך קומפוננטות או אלמנטים נוספים */}
+      <Flower />
     </div>
   );
 }
