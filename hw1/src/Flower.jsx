@@ -1,8 +1,10 @@
-function Flower() {
-  // המשתנים עם ערכים לבחירתך
-  const flowerName = "חמנייה";
-  const petalColor = "green"; 
-  const centerColor = "red"; 
+function Flower(props) {
+     const flowerName = props.name || "חמנייה";
+    const handleClick = () => {
+    alert(`אני פרח מסוג ${flowerName}`);
+  };
+  const petalColor = "green";
+  const centerColor = "red";
 
   const flowerStyle = {
     backgroundColor: petalColor,
@@ -13,14 +15,14 @@ function Flower() {
     textAlign: 'center',
     maxWidth: '300px',
     boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-    fontFamily: 'Arial, sans-serif'
+    fontFamily: 'Arial, sans-serif',
+    cursor: 'pointer'
   };
 
   return (
-    <div style={flowerStyle}>
+    <div style={flowerStyle} onClick={handleClick}>
       <h2>{flowerName}</h2>
-      <p>צבע עלי הכותרת: {petalColor}</p>
-      <p>צבע העלה המרכזי: {centerColor}</p>
+      <p>לחץ עלי כדי ללמוד על הפרח</p>
     </div>
   );
 }
