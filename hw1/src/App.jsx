@@ -12,6 +12,13 @@ function App() {
       
       <Flower 
         name="שושנה"
+        petalColor="pink"
+        centerColor="yellow"
+      />
+      <Flower 
+        name="גבעול"
+        petalColor="yellow"
+        centerColor="orange"
       />
     </div>
   );

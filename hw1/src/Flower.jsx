@@ -3,8 +3,8 @@ function Flower(props) {
     const handleClick = () => {
     alert(`אני פרח מסוג ${flowerName}`);
   };
-  const petalColor = "green";
-  const centerColor = "red";
+  const petalColor = props.petalColor ;
+  const centerColor = props.centerColor ;
 
   const flowerStyle = {
     backgroundColor: petalColor,
